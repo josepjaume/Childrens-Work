@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "mediaquery.scss";
+@import "mixin.scss";
+@import "variable.scss";
+
+@include phone {
+
+html, body {
+	background: url(../img/https://lh6.googleusercontent.com/LwNbfR5Kjem13QSZuAvRUu1w93PkDvdN6U6sxB6u1YMewvGM_5Qz-eMSkiW31s4719Puzp2ITNA=w1342-h523) no-repeat center fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+main.content {
+	width: 100%;
+	height: 100%;
+}
+
+header.create-header {
+	background-color: $colorFuchs;
+	position: relative;
+	z-index: 2;
+    @include box-shadow;
+	border-bottom: 1px solid $colorFuchsBorder;
+	width: 100%;
+	height: 50px;
+}
+
+header.create-header ul.create-ul {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  @include link;
+}
+
+header.create-header ul.create-ul li {
+	@include list;
+}
+
+header.create-header ul.create-ul li:nth-child(1) {
+	text-align: left;
+	margin: 17px 0px 0px 15px;
+}
+
+header.create-header ul.create-ul li:nth-child(2) {
+	position: absolute;
+	top: 50%;
+	right: 32%;
+	margin: -15px 60px 0px 0px;
+	cursor: pointer;
+}
+
+header.create-header ul.create-ul li:nth-child(3) {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin: -15px 60px 0px 0px;
+	cursor: pointer;
+}
+
+header.create-header ul.create-ul li:nth-child(4) {
+    position: absolute;
+	top: 50%;
+	right: 0;
+	margin: -13px 15px 0px 0px;
+	cursor: pointer;
+}
+
+div.content-memoall {
+	position: relative;
+	z-index: 2;
+    @include box-shadow;
+	border: 0;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+div.content-memoall ul#content-memo {
+	position: relative;
+	top: 20px;
+	border: 0;
+	margin: 0 auto;
+	padding: 0px;
+	width: 95%;
+}
+
+div.content-memoall ul#content-memo li.memo {
+	background-color: $colorMulberry;
+    display: block;
+	vertical-align: baseline;
+	text-align: center;
+	border-bottom: 1px solid $colorMulberryBorder;
+	@include border-radius;
+	cursor: pointer;
+	margin: auto;
+	margin-top: 5px;
+    padding: 20px;
+	width: 95%;
+}
+
+div.content-memoall ul#content-memo li.memo:first-child {
+	margin: 0 auto;
+}
+
+div.content-memoall ul#content-memo li.memo:last-child {
+	@include box-shadow;
+}
+
+div.content-memoall ul#content-memo li.strikethrough {
+	background-color: $colorMulberryRemove;
+	text-decoration: line-through;
+}
+
+div.map {
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+	box-shadow: 0px -2px 2px 0px  rgba(#303030, 0.4);
+	width: 100%;
+	height: 200px;
+}
+
+.displayMap {
+	display: none;
+}
+
+}

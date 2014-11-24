@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@mixin line-height {
+	line-height: 0;
+}
+
+@mixin link {
+	text-decoration: none;
+}
+
+@mixin list {
+	display: inline-block;
+	list-style-type: none;
+}
+
+@mixin box-shadow {
+	-webkit-box-shadow: 0px 2px 2px 0px  rgba(#303030, 0.4);
+	-moz-box-shadow: 0px 2px 2px 0px  rgba(#303030, 0.4);
+	-ms-box-shadow: 0px 2px 2px 0px  rgba(#303030, 0.4);
+}
+
+@mixin border-radius {
+	border-radius: 5px;
+}
+
