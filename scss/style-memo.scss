@@ -47,8 +47,8 @@ header.create-header ul.create-ul li:nth-child(1) {
 header.create-header ul.create-ul li:nth-child(2) {
 	position: absolute;
 	top: 50%;
-	right: 32%;
-	margin: -15px 60px 0px 0px;
+    right: 50%;
+	margin-top: -15px;
 	cursor: pointer;
 }
 
@@ -93,7 +93,6 @@ div.content-memoall ul#content-memo li.memo {
 	text-align: center;
 	border-bottom: 1px solid $colorMulberryBorder;
 	@include border-radius;
-	opacity: 0.9;
 	cursor: pointer;
 	margin: auto;
 	margin-top: 5px;
