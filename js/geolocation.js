@@ -20,7 +20,7 @@ function getGeolocation(){
 function geolocation(position){
 var latitud = position.coords.latitude;
 var longitud = position.coords.longitude;
-var map = 'http://maps.google.com/maps/api/staticmap?center=' + latitud + ',' + longitud + '&zoom=15&size=400x200&markers=color:blue|label:A|' + latitud + ',' + longitud + '&sensor=false';
+var map = 'http://maps.google.com/maps/api/staticmap?center=' + latitud + ',' + longitud + '&zoom=15&size=300x200&markers=color:blue|label:A|' + latitud + ',' + longitud + '&sensor=false';
   getMap.innerHTML = "<img src='"+ map +"'>";
 }
 

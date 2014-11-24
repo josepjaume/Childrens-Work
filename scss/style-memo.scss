@@ -6,7 +6,7 @@
 @include phone {
 
 html, body {
-	background: url(../img/https://lh6.googleusercontent.com/LwNbfR5Kjem13QSZuAvRUu1w93PkDvdN6U6sxB6u1YMewvGM_5Qz-eMSkiW31s4719Puzp2ITNA=w1342-h523) no-repeat center fixed;
+	background: url(https://lh4.googleusercontent.com/Mh1v4uRMfD8CTfoLv1raOHlZk2O1cYQeVUeV4eeDW6YyO-4DbXPtMVrBcFZ77q9fjdqkg1GKqUo=w890-h280) no-repeat center fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -71,7 +71,6 @@ header.create-header ul.create-ul li:nth-child(4) {
 div.content-memoall {
 	position: relative;
 	z-index: 2;
-    @include box-shadow;
 	border: 0;
 	margin: 0 auto;
 	padding: 0;
@@ -94,6 +93,7 @@ div.content-memoall ul#content-memo li.memo {
 	text-align: center;
 	border-bottom: 1px solid $colorMulberryBorder;
 	@include border-radius;
+	opacity: 0.9;
 	cursor: pointer;
 	margin: auto;
 	margin-top: 5px;
