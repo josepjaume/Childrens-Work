@@ -6,7 +6,7 @@
 @include phone {
 
 html, body {
-	background: url(https://lh4.googleusercontent.com/Mh1v4uRMfD8CTfoLv1raOHlZk2O1cYQeVUeV4eeDW6YyO-4DbXPtMVrBcFZ77q9fjdqkg1GKqUo=w890-h280) no-repeat center fixed;
+    background: url(https://lh3.googleusercontent.com/_OY_9a8VlHKWUripPxa0y67JE2X1egbfiXQ44tNyLu9MQhYrbP7A__gaYr7JzBS-hTwd5pff17Q=w1342-h523) no-repeat center fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -83,7 +83,7 @@ div.content-memoall ul#content-memo {
 	border: 0;
 	margin: 0 auto;
 	padding: 0px;
-	width: 95%;
+	width: 98%;
 }
 
 div.content-memoall ul#content-memo li.memo {
@@ -97,7 +97,7 @@ div.content-memoall ul#content-memo li.memo {
 	margin: auto;
 	margin-top: 5px;
     padding: 20px;
-	width: 95%;
+	width: 98%;
 }
 
 div.content-memoall ul#content-memo li.memo:first-child {
@@ -113,17 +113,14 @@ div.content-memoall ul#content-memo li.strikethrough {
 	text-decoration: line-through;
 }
 
-div.map {
+.styleMap {
 	position: absolute;
 	bottom: 0;
 	z-index: 3;
-	box-shadow: 0px -2px 2px 0px  rgba(#303030, 0.4);
+	border-top: 1px solid #808080;
+	box-shadow: 0px -2px 2px 0px  rgba(#383838, 0.4);
 	width: 100%;
 	height: 200px;
-}
-
-.displayMap {
-	display: none;
 }
 
 }

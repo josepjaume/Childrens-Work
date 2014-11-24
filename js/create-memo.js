@@ -13,7 +13,7 @@ function newMemo(list, itemText){
 	listMemo.innerText = itemText;
 	list.appendChild(listMemo);
 
-  listMemo.addEventListener('click', toggleList);
+    listMemo.addEventListener('click', toggleList);
 }
 
 add.onclick = function(){
@@ -23,7 +23,6 @@ add.onclick = function(){
 	  }else {
 	  	return false;
 	  }
-
 }
 
 function removeList(){

@@ -3,10 +3,6 @@ window.addEventListener("domready", geolocation, false);
 var search = document.getElementById('geolocation-search');
 var getMap = document.getElementById('map');
 
-//function toggleList(event){
-//	event.target.classList.toggle('displayMap');
-//}
-
 search.addEventListener('click', getGeolocation, false);
 
 function getGeolocation(){
@@ -21,7 +17,7 @@ function geolocation(position){
 var latitud = position.coords.latitude;
 var longitud = position.coords.longitude;
 var map = 'http://maps.google.com/maps/api/staticmap?center=' + latitud + ',' + longitud + '&zoom=15&size=300x200&markers=color:blue|label:A|' + latitud + ',' + longitud + '&sensor=false';
-  getMap.innerHTML = "<img src='"+ map +"'>";
+  getMap.innerHTML = "<img src='"+ map +"' />" ;
 }
 
 function handlingErrors (err) {
@@ -38,4 +34,3 @@ else if (err.code == 2) {
 	alert('Your browser has blocked the geolocation');
 }
 }
-
