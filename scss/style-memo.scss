@@ -6,7 +6,7 @@
 @include phone {
 
 html, body {
-    background: url(http://photos-d.ak.instagram.com/hphotos-ak-xpa1/10502559_1469679693272459_121836281_n.jpg) no-repeat center fixed;
+  background: url(http://photos-d.ak.instagram.com/hphotos-ak-xpa1/10502559_1469679693272459_121836281_n.jpg) no-repeat center fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -22,7 +22,7 @@ header.create-header {
 	background-color: $colorFuchs;
 	position: relative;
 	z-index: 2;
-    @include box-shadow;
+  @include box-shadow;
 	border-bottom: 1px solid $colorFuchsBorder;
 	width: 100%;
 	height: 50px;
@@ -30,9 +30,9 @@ header.create-header {
 
 header.create-header ul.create-ul {
   position: relative;
+  @include link;
   width: 100%;
   height: 50px;
-  @include link;
 }
 
 header.create-header ul.create-ul li {
@@ -88,16 +88,17 @@ div.content-memoall ul#content-memo {
 
 div.content-memoall ul#content-memo li.memo {
 	background-color: $colorMulberry;
-    display: block;
+  display: block;
 	vertical-align: baseline;
 	text-align: center;
 	border-bottom: 1px solid $colorMulberryBorder;
 	@include border-radius;
-	cursor: pointer;
-	margin: auto;
+	opacity: 0.9;
+	margin: 0 auto;
 	margin-top: 5px;
-    padding: 20px;
+  padding: 20px;
 	width: 98%;
+	cursor: pointer;
 }
 
 div.content-memoall ul#content-memo li.memo:first-child {
