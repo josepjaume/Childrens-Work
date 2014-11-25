@@ -26,15 +26,23 @@ a.link {
 }
 
 div.enter {
-	background-color: $colorFuchs; //IMG
-	border-bottom: 1px solid $colorFuchsBorder;
 	@include box-shadow; //Ver un degradado
 	border-radius: 2px;
+	opacity: 0.9;
 	margin: 0 auto;
 	padding: 0;
-	opacity: 0.9;
-	width: 100px;//Sera auto cuando le introduzca la img
-	height: 50px;//Sera auto cuando le introduzca la img
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+
+i.fa {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -40px;
+	margin-right: -40px;
+	color: $colorFuchs;
 }
 
 }
