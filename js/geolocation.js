@@ -1,4 +1,4 @@
-window.addEventListener("domready", geolocation, false);
+window.addEventListener('domready', geolocation, false);
 
 var search = document.getElementById('geolocation-search');
 var getMap = document.getElementById('map');
