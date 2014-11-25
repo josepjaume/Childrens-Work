@@ -6,7 +6,7 @@
 @include phone {
 
 html, body {
-    background: url(http://photos-e.ak.instagram.com/hphotos-ak-xap1/10499133_240219002843252_1612974013_n.jpg) no-repeat center fixed;
+    background: url(http://photos-g.ak.instagram.com/hphotos-ak-xaf1/10401648_1443102002610782_1383891241_n.jpg) no-repeat center fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -26,13 +26,15 @@ a.link {
 }
 
 div.enter {
-	@include box-shadow; //Ver un degradado
-	border-radius: 2px;
+	background-color: #383838;
+	@include box-shadow;
+	border-radius: 100%;
+	box-shadow: -2px  0px 20px 0px  rgba(#383838, 0.4);
 	opacity: 0.9;
 	margin: 0 auto;
 	padding: 0;
-	width: auto;
-	height: auto;
+	width: 130px;
+	height: 130px;
 	cursor: pointer;
 }
 
@@ -41,7 +43,7 @@ i.fa {
 	top: 50%;
 	right: 50%;
 	margin-top: -40px;
-	margin-right: -40px;
+	margin-right: -28px;
 	color: $colorFuchs;
 }
 

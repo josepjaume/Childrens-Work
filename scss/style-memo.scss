@@ -40,14 +40,27 @@ header.create-header ul.create-ul li {
 }
 
 header.create-header ul.create-ul li:nth-child(1) {
-	text-align: left;
-	margin: 17px 0px 0px 15px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -15px 0px 0px 15px;
+	cursor: pointer;
 }
+
+header.create-header ul.create-ul li:nth-child(1) a.goToMemo {
+	@include link;
+}
+
+i.fa {
+	color: #000000;
+}
+
+
 
 header.create-header ul.create-ul li:nth-child(2) {
 	position: absolute;
 	top: 50%;
-    right: 50%;
+  right: 50%;
 	margin-top: -15px;
 	cursor: pointer;
 }
