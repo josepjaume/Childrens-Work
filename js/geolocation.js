@@ -14,23 +14,25 @@ function getGeolocation(){
 }
 
 function geolocation(position){
-var latitud = position.coords.latitude;
-var longitud = position.coords.longitude;
-var map = 'http://maps.google.com/maps/api/staticmap?center=' + latitud + ',' + longitud + '&zoom=15&size=300x200&markers=color:blue|label:A|' + latitud + ',' + longitud + '&sensor=false';
-  getMap.innerHTML = "<img src='"+ map +"' />" ;
+	var latitud = position.coords.latitude;
+	var longitud = position.coords.longitude;
+	var map = 'http://maps.google.com/maps/api/staticmap?center=' + latitud + ',' + longitud + '&zoom=15&size=300x200&markers=color:blue|label:A|' + latitud + ',' + longitud + '&sensor=false';
+
+	getMap.innerHTML = "<img src='"+ map +"' />" ;
 }
 
 function handlingErrors (err) {
 
-if (err.code == 0) {
-	alert('You need authorize geolocation in your browser');
-}
+	if (err.code == 0) {
+		alert('You need authorize geolocation in your browser');
+	}
 
-else if (err.code == 1) {
-	alert('Your position is not available');
-}
+	else if (err.code == 1) {
+		alert('Your position is not available');
+	}
 
-else if (err.code == 2) {
-	alert('Your browser has blocked the geolocation');
-}
+	else {
+		alert('Your browser has blocked the geolocation');
+	}
+
 }
