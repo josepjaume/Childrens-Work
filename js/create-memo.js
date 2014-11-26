@@ -1,38 +1,31 @@
-window.onload = function(){
+$(document).ready(function(){
+  function toggleList(listMemo){
+    listMemo.toggleClass('strikethrough');
+  }
 
-var add =  document.getElementById('create-memo');
-var remove = document.getElementById('remove-memo');
+  function newMemo(list, itemText){
+    var listMemo = $("<li />");
+    listMemo.addClass('memo').html(itemText);
+    listMemo.appendTo(list);
+    listMemo.click(function(){
+      toggleList(listMemo);
+    });
+  }
 
-function toggleList(event){
-	event.target.classList.toggle('strikethrough');
-}
+  $("#create-memo").click(function(){
+    var itemText = prompt('Create a Memo');
+    if(itemText) {
+      newMemo($('#content-memo'), itemText);
+    }else {
+      return false;
+    }
+  });
 
-function newMemo(list, itemText){
-	var listMemo = document.createElement('li');
-	listMemo.className = 'memo';
-	listMemo.innerText = itemText;
-	list.appendChild(listMemo);
+  $("#remove-memo").click(function(){
+    var lists = $('li.strikethrough');
 
-    listMemo.addEventListener('click', toggleList);
-}
-
-add.onclick = function(){
-	var itemText = prompt('Create a Memo');
-		if(itemText) {
-		  newMemo(document.getElementById('content-memo'), itemText);
-	  }else {
-	  	return false;
-	  }
-}
-
-function removeList(){
-	var lists = document.querySelectorAll('li.strikethrough');
-
-	for (var i = 0; i < lists.length; i++) {
-		lists[i].parentNode.removeChild(lists[i]);
-	}
-}
-
-	remove.addEventListener('click', removeList);
-
-}
+    lists.each(function(list){
+      $(list).remove();
+    })
+  });
+});
